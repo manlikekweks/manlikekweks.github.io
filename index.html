@@ -3,63 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Man Like Kweks | Sovereign Architect</title>
+    <title>MAN LIKE KWEKS</title>
     <style>
-        body { 
-            background: #000 url('profile.jpg') no-repeat center center fixed; 
-            background-size: cover; 
-            color: #fff; 
-            font-family: sans-serif; 
-            margin: 0; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            height: 100vh; 
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background: #000 url('profile.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex; align-items: center; justify-content: center;
+            color: #FFFFFF; overflow: hidden;
         }
-        .overlay { 
-            background: rgba(0, 0, 0, 0.7); 
-            position: absolute; 
-            top: 0; left: 0; width: 100%; height: 100%; 
-            z-index: 1; 
+        /* Fear of God style subtle dark veil */
+        .overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6); z-index: 1;
         }
-        .card { 
-            position: relative; 
-            z-index: 2; 
-            background: rgba(255, 255, 255, 0.05); 
-            backdrop-filter: blur(15px); 
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-            padding: 40px; 
-            border-radius: 20px; 
-            text-align: center; 
-            max-width: 450px; 
-            width: 90%; 
+        .content {
+            position: relative; z-index: 2; text-align: center;
+            letter-spacing: 0.15em;
         }
-        h1 { font-size: 2.5em; letter-spacing: 2px; margin: 0; color: #FFD700; }
-        p { color: #ccc; margin: 10px 0 30px 0; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
-        .btn { 
-            display: block; 
-            background: rgba(255, 215, 0, 0.1); 
-            color: #FFD700; 
-            text-decoration: none; 
-            padding: 15px; 
-            margin: 10px 0; 
-            border-radius: 10px; 
-            border: 1px solid #FFD700; 
-            font-weight: bold; 
-            transition: 0.3s; 
+        h1 {
+            font-size: 1.2rem; font-weight: 300; text-transform: uppercase;
+            margin-bottom: 40px; color: rgba(255, 255, 255, 0.9);
         }
-        .btn:hover { background: #FFD700; color: #000; }
+        .nav { display: flex; flex-direction: column; gap: 20px; }
+        .nav a {
+            text-decoration: none; color: #888; font-size: 0.7rem;
+            text-transform: uppercase; font-weight: 400;
+            transition: color 0.4s ease;
+        }
+        .nav a:hover { color: #FFD700; } /* Subtle gold hit on hover */
+        .footer {
+            position: absolute; bottom: 40px; width: 100%; text-align: center;
+            font-size: 10px; color: #444; text-transform: uppercase; letter-spacing: 0.2em;
+        }
     </style>
 </head>
 <body>
     <div class="overlay"></div>
-    <div class="card">
+    <div class="content">
         <h1>MAN LIKE KWEKS</h1>
-        <p>Sovereign Architect & Performer</p>
-        <a href="https://yakihonne.com/nprofile1qqsyee4th45d4dhflhmw36v3928p97d488s83335c4dfhlefjjj3fhgzqqpsgqqqqqqqwxpk67" class="btn">🚢 THE ARK LOGS</a>
-        <a href="https://github.com/manlikekweks/B1M_Core" class="btn">🛠️ B1M SOURCE CODE</a>
-        <a href="https://linktr.ee/manlikekweks" class="btn">🌳 ALL CONNECTIONS</a>
+        <div class="nav">
+            <a href="https://yakihonne.com/your-profile">The Ark Logs</a>
+            <a href="https://github.com/manlikekweks/B1M_Core">Source Code</a>
+            <a href="https://linktr.ee/manlikekweks">Contact</a>
+        </div>
+    </div>
+    <div class="footer">
+        © 2026 Sovereign Architecture / B1M
     </div>
 </body>
 </html>
